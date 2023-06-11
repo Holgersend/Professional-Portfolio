@@ -4,33 +4,33 @@
     padding: 0;
     margin: 0;
     --white: #fff;
-    --background: #eeeef7;
-    --blue: #445877;
-    --dark-blue: #31343d;
-    --light-blue: #92ccce;
+    --background: #edede9;
+    --tan: #e3d5ca;
+    --dark-tan: #d6ccc2;
+    --light-tan: #f5ebe0;
 }
 
 body {
     background-color: var(--background);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--blue);
+    color: var(--dark-tan);
     margin: 0;
     padding: 0%;
 }
 
 .header {
     text-align: left;
-    background-color: var(--dark-blue);
-    color: var(--light-blue);
-    padding: 20px;
+    background-color: var(--dark-tan);
+    color: var(--light-tan);
+    padding: 30px;
     
 }
 
 .header h1 {
     font-size: 50px;
     display: inline-flex;
-    color: var(--dark-blue);
-    background-color: var(--light-blue);
+    color: var(--dark-tan);
+    background-color: var(--light-tan);
     padding: 10px 1% 10px 15px;
 
 }
@@ -42,8 +42,8 @@ body {
     margin-right: 55px;
     font-family: serif;
     font-size: 30px;
-    background-color: var(--dark-blue);
-    color: var(--light-blue);
+    background-color: var(--dark-tan);
+    color: var(--light-tan);
     
 }
 
@@ -53,8 +53,8 @@ body {
 }
 
 .header nav a {
-  color: var(--light-blue);
-  background-image: linear-gradient(270deg, var(--light-blue) 0%, var(--light-blue) 100%);
+  color: var(--light-tan);
+  background-image: linear-gradient(270deg, var(--light-tan) 0%, var(--light-tan) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
@@ -63,35 +63,26 @@ body {
 
 nav a:hover {
     background-size: 100% 100%;
-    color: var(--dark-blue);
+    color: var(--dark-tan);
     
   }
 
-.header nav ul li {
+.header nav a {
     display: inline-block;
-    margin-left: 20px;
-}
-
-main{
-    margin-top: 20px;   
-    margin-bottom: 45px;
-}
-
-.bannerimage {
-    width: 100%;
-    background-image: url("./assets/images/Wallpaper.jpeg"), ; 
-    height: 220px;
-    background-color: var(--blue);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: flex-end;
+    margin-left: 30px;
 }
 
 
 .content{
-    margin: 25px 0;
-    padding: 10px 0;
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.page {
+    margin: 20px;
+    padding: 10px;
+    height: 300px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -99,30 +90,68 @@ main{
     justify-content: space-between;
 }
 
-.content h2{
-    flex: 0 0 20%;
-    text-align: left;
-    padding-right: 15px;
-    border-right: 4px solid var(--primary);
-    font-size: 50px;
-    line-height: 1.1;
+.about-me {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    font-size: 80px;
 }
 
-.content p {
+img {
+    height: 200px; ;
+    width: 130;
+    float: right;
+    margin: 8px 0 0 20 px;
+    padding: 4px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.float-left {
+float:left;
+margin-right: 25px;
+    
+} 
+
+
+.page {
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    font-size: 40px;
+    
+}
+
+.work {
+    margin: 50px;
+    padding: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-work {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    font-size: 80px;
 }
 
 
 
-h2 {
-    display: block;
-    margin-block-start: .83em;
-    margin-block-end: .83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
+
+
+
+
+
+
+
+
+
+
+
